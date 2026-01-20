@@ -6,101 +6,74 @@
     <title>Ramen Website</title>
 </head>
 <body>
+<form method="post" action="https://formtester.goodbytes.be/post.php">
 
-  <header>
-    <img html height = 280 width = 1900 src="Asset/banner-background-with-chinese-noodles-ramen-illustration-template-for-website-advertising-vector.jpg" alt="Cartoon ramen bowl on a brownpaper backround saying 'ramen'"><br>
-  </headerheader>
+  <img height = 280 width = 1900 src="Asset/banner-background-with-chinese-noodles-ramen-illustration-template-for-website-advertising-vector.jpg" alt="Cartoon ramen bowl on a brownpaper backround saying 'ramen'"><br>
 
-<userinfo>
   <h2><u>User Information</u></h2>
-  <h4><i>[Required]</i></h4>
+
   <label for="fname">First Name:</label><br>
-  <input type="text" id="fname" name="fname" value="Enter name here..."><br><br>
-
+  <input type="text" id="fname" name="FirstName:" value="" required><br><br>
   <label for="num">Phone Number:</label><br>
-  <input type="text" id="num" name="num" value="###-###-####"><br><br>
-
+  <input type="text" id="num" name="num" value="" required><br><br>
   <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email" value="ramenshop@gmail.com..."><br><br>
+  <input type="text" id="email" name="email" value=""><br><br>
 
-  <input type="submit" value="Submit"><br><br>
-</userinfo>
-
-<bowlsize>
   <h2><u>Bowl Size</u></h2>
-  <h4><i>[Required]</i></h4>
-  <input type="radio" id="childSmall" name="size" value="Smalls">
-  <label for="childSmall">Extra Small: 15oz(400mL)</label><br>
 
+  
+  <input type="radio" id="childSmall" name="size" value="Smalls" checked>
+  <label for="childSmall">Extra Small: 15oz(400mL)</label><br>
   <input type="radio" id="small" name="size" value="Small">
   <label for="small">Small: 25oz(700mL)</label><br>
-
   <input type="radio" id="medium" name="size" value="Medium">
   <label for="medium">Medium: 40oz(1L)</label><br>
-
   <input type="radio" id="large" name="size" value="Large">
   <label for="large">Large: 55oz(1.5L)</label><br><br>
+  
 
-  <input type="submit" value="Submit"><br><br>
-</bowlsize>
+  <h2><u>Broth Base Type</u></h2>
 
-<brothbase>
- <h2><u>Broth Base</u></h2>
- <h4><i>[Required]</i></h4>
   <input type="checkbox" id="Noodle" name="Noodle" value="LongBoiBathBroth">
   <label for="Noodle"> Miso (Fermented Bean Paste) </label><br>
-
   <input type="checkbox" id="Noodle1" name="Noodle1" value="LongBoiBathBroth1">
   <label for="Noodle1"> Shio (Salt) </label><br>
-
   <input type="checkbox" id="Noodle2" name="Noodle2" value="LongBoiBathBroth2">
   <label for="Noodle2"> Shoyu (Soy Sauce) </label><br>
+  <input type="checkbox" id="Noodle3" name="Noodle3" value="LongBoiBathBroth3" checked>
+  <label for="Noodle3"> Tonkotsu (Pork Bone) </label><br><br>
 
-  <input type="checkbox" id="Noodle3" name="Noodle3" value="LongBoiBathBroth3">
-  <label for="Noodle3"> Tonkotsu (Pork Bone) </label><br>
-</brothbase>
-
-
-<ingredients>
   <h2><u>Ingredients</u></h2>
 
-  <img html height = 180 src="Asset/OIP.webp" alt="A bowl of ramen topped with chives and half a boiled egg in broth"><br>
+  <img height = 180 src="Asset/OIP.webp" alt="A bowl of ramen topped with chives and half a boiled egg in broth"><br>
+
   <input type="checkbox" id="Ingredient2" name="Ingredient2" value="BokChoy">
-  <label for="Ingreient2"> Bok Choy </label><br>
-
+  <label for="Ingredient2"> Bok Choy </label><br>
   <input type="checkbox" id="Ingredient3" name="Ingredient3" value="Chive">
-  <label for="Ingreient3"> Chives </label><br>
-
+  <label for="Ingredient3"> Chives </label><br>
   <input type="checkbox" id="Ingredient" name="Ingredient" value="BambooShoot">
-  <label for="Ingreient"> Fermented Bamboo Shoots </label><br>
-
+  <label for="Ingredient"> Fermented Bamboo Shoots </label><br>
   <input type="checkbox" id="Ingredient4" name="Ingredient4" value="Kimchi">
-  <label for="Ingreient4"> Kimchi </label><br>
-
+  <label for="Ingredient4"> Kimchi </label><br>
   <input type="checkbox" id="Ingredient5" name="Ingredient5" value="Moyashi">
-  <label for="Ingreient5"> Moyashi </label><br>
-
+  <label for="Ingredient5"> Moyashi </label><br>
   <input type="checkbox" id="Ingredient6" name="Ingredient6" value="PickledGinger">
-  <label for="Ingreient6"> Pickled Ginger </label><br>
-
+  <label for="Ingredient6"> Pickled Ginger </label><br>
   <input type="checkbox" id="Ingredient7" name="Ingredient7" value="SesameSeed">
-  <label for="Ingreient7"> Sesame Seeds </label><br>
-
+  <label for="Ingredient7"> Sesame Seeds </label><br>
   <input type="checkbox" id="Ingredient8" name="Ingredient8" value="ShiitakeMushroom">
-  <label for="Ingreient8"> Shiitake Mushrooms </label><br>
-
+  <label for="Ingredient8"> Shiitake Mushrooms </label><br>
   <input type="checkbox" id="Ingredient9" name="Ingredient9" value="EXTRA?????">
-  <label for="Ingreient9"> Extra Noodles </label><br>
-
+  <label for="Ingredient9"> Extra Noodles </label><br>
   <input type="checkbox" id="extra" name="extra" value="nothing">
   <label for="extra"> None </label><br><br>
-</ingredients>
 
-<protein>
   <h2><u>Protein Options</u></h2>
-  <img html height = 160 src="Asset/download.avif" alt="Ramen protein centered around a bowl of meat"><br>
+
+  <img height = 160 src="Asset/download.avif" alt="Ramen protein centered around a bowl of meat"><br>
+
   <label for="protein">Protein:</label>
-  <select name="proteins" id="proteins">
+  <select name="protein" id="protein">
   <option value="none">Nothing</option>
   <option value="Chicken">Chicken</option>
   <option value="Egg">Egg</option>
@@ -111,8 +84,8 @@
   </select>
   <br><br>
 
-  <label for="protein">Protein:</label>
-  <select name="proteins" id="proteins">
+  <label for="protein1">Protein:</label>
+  <select name="protein1" id="protein1">
   <option value="none">Nothing</option>
   <option value="Chicken">Chicken</option>
   <option value="Egg">Egg</option>
@@ -123,8 +96,8 @@
   </select>
   <br><br>
 
-  <label for="protein">Protein:</label>
-  <select name="proteins" id="proteins">
+  <label for="protein2">Protein:</label>
+  <select name="protein2" id="protein2">
   <option value="none">Nothing</option>
   <option value="Chicken">Chicken</option>
   <option value="Egg">Egg</option>
@@ -132,37 +105,29 @@
   <option value="Pork">Pork</option>
   <option value="Shrimp">Shrimp</option>
   <option value="Tofu">Tofu</option>
-  </select>
-  <br><br>
+  </select><br><br>
 
-  <input type="submit" value="Submit"><br><br>
-</protein>
-
-<deliverymethod>
   <h2><u>Pickup Method</u></h2>
-  <h4><i>[Required]</i></h4>
+
   <input type="radio" id="delivery" name="deliv_or_pickup" value="Delivery">
   <label for="delivery">DELIVERY</label><br>
+  <input type="radio" id="pickup" name="deliv_or_pickup" value="Pickup" checked>
+  <label for="delivery">PICKUP</label><br><br><br>
 
-  <input type="radio" id="pickup" name="deliv_or_pickup" value="Pickup">
-  <label for="delivery">PICKUP</label><br><br>
+  <label for="addifo">Additional Information:</label><br>
+  <input type="text" id="addifo" name="addifo" value="" required><br><br>
 
-  <input type="submit" value="Submit"><br><br><br>
-</deliverymethod>
+  <input type="Submit" value="Submit"><br><br><br>
 
-<extrainfo>
-  <h5><u><i>Disclaimer!!</i></u></h5>
-  <h6><i>Ramen Website isn't responsible for exploding packages, customer satisfaction in-store, or the inevitable death that comes with consuming too much salt</i></h6>
-  <h6><i>Ramen Website cannot control their delivery drivers</i></h6>
-  <h6><i>Ramen Website will not change for your preference</i></h6>
-  <h6><i>Please reach out to Ramen Website's trash bin for complaints</i></h6>
-  <h6><i>Don't see it? That's because we don't care</i></h6>
+  <h1><u><b><i>Disclaimer!!</i></b></u></h1>
+  <h2><i>Ramen Website isn't responsible for exploding packages, customer satisfaction in-store, or the inevitable death that comes with consuming too much salt</i></h2>
+  <h3><i>Ramen Website will not change for your preference</i></h3>
+  <h4><i>Please reach out to Ramen Website's trash bin for complaints</i></h4>
+  <h5><i>Don't see it? That's because we don't care</i></h5>
   <h6><i>Have a good day</i></h6>
-</extrainfo>
 
-<footer>
-    <img html height = 280 width = 1900 src="Asset/pngtree-natural-wood-surface-close-up-of-soft-yellow-golden-brown-parquet-image_13651977.png" alt="Earth yellow wooden slab"><br>
-</footer>
+  <img height = 280 width = 1900 src="Asset/pngtree-natural-wood-surface-close-up-of-soft-yellow-golden-brown-parquet-image_13651977.png" alt="Earth yellow wooden slab"><br>
 
+</form>
 </body>
 </html>
